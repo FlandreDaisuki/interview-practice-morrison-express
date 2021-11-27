@@ -1,4 +1,4 @@
-import { ref, watch } from 'vue';
+import { ref, watch, onBeforeUnmount } from 'vue';
 
 
 export const useMultipleSelection = (itemsModel) => {
@@ -18,9 +18,17 @@ export const useMultipleSelection = (itemsModel) => {
   };
 
   const bindSelectionElRef = (el) => {
-    itemElRefs.value.push(el);
-    el.addEventListener('click', onClick);
+    if (el) {
+      itemElRefs.value.push(el);
+      el.addEventListener('click', onClick);
+    }
   };
+
+  onBeforeUnmount(() => {
+    itemElRefs.value.forEach((el) => {
+      el.removeEventListener('click', onClick);
+    });
+  });
 
   watch(lastIndexWithShiftKey, () => {
     if (lastIndexWithShiftKey.value < 0) { return; }
