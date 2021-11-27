@@ -30,4 +30,8 @@ export default {
 ul {
   list-style: none;
 }
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
 </style>

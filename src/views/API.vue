@@ -20,6 +20,7 @@
       <li><code>GET /templates/{template_id}/clear-cache</code></li>
     </ul>
   </p>
+  <router-link to="/">Home</router-link>
 </template>
 
 <script>

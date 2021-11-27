@@ -30,6 +30,7 @@
         </tbody>
       </table>
       <div class="output">{{ selectedItemsDisplay }}</div>
+      <router-link to="/">Home</router-link>
     </section>
   </main>
 </template>

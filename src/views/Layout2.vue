@@ -80,7 +80,7 @@
         congue eget volutpat non, placerat a lectus.
       </p>
     </article>
-    <footer>Footer</footer>
+    <footer>Footer | <router-link to="/">Home</router-link></footer>
   </main>
 </template>
 

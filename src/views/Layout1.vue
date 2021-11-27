@@ -85,7 +85,7 @@
         </p>
       </article>
     </section>
-    <footer>Footer</footer>
+    <footer>Footer | <router-link to="/">Home</router-link></footer>
   </main>
 </template>
 
