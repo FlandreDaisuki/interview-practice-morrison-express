@@ -3,6 +3,7 @@ import Home from '../views/Home.vue';
 import Layout1 from '../views/Layout1.vue';
 import Layout2 from '../views/Layout2.vue';
 import Hook from '../views/Hook.vue';
+import API from '../views/API.vue';
 
 const routes = [
   {
@@ -11,19 +12,24 @@ const routes = [
     component: Home,
   },
   {
-    path: '/layout1',
+    path: '/Layout1',
     name: 'Layout1',
     component: Layout1,
   },
   {
-    path: '/layout2',
+    path: '/Layout2',
     name: 'Layout2',
     component: Layout2,
   },
   {
-    path: '/hook',
+    path: '/Hook',
     name: 'Hook',
     component: Hook,
+  },
+  {
+    path: '/API',
+    name: 'API',
+    component: API,
   },
 ];
 
