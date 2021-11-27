@@ -18,7 +18,7 @@
       </li>
     </ul>
   </nav>
-  <iframe src="/questions.pdf" />
+  <iframe src="./questions.pdf" />
 </template>
 
 <script>
