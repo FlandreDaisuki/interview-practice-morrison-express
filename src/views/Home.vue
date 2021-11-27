@@ -18,6 +18,7 @@
       </li>
     </ul>
   </nav>
+  <iframe src="/questions.pdf" />
 </template>
 
 <script>
@@ -33,5 +34,12 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
+}
+iframe {
+  display: block;
+  width: 100vmin;
+  height: 100vmin;
+  max-height: 700px;
+  max-width: 700px;
 }
 </style>
